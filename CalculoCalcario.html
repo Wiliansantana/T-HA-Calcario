@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+ 	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+	<title>Somando Números</title>
+
+	<style>
+		body{
+			font:normal 18pt Arial;
+			background-color: #f5f5f0;
+		}
+		input{
+			font: normal 18pt Arial;
+			width: 100px;
+		}
+    </style>
+
+</head>
+
+<body>
+	<br>
+
+	<div class="card w-75 mx-auto shadow-sm" style="width: 18rem;">
+    <div class="card-body text-center">
+
+    <h1>NC = (V2-V1) x T/10 x PRNT</h1>
+	<br>
+
+    <center>V2
+    	<div class="form-group col-md-3 ">
+      		<input type="number" class="form-control text-center shadow-sm" name="txtn1" id="txtn1">
+    	</div>
+    </center>
+
+    <center>V1
+    	<div class="form-group col-md-3">
+      		<input type="number" class="form-control text-center shadow-sm" name="txtn2" id="txtn2">
+    	</div>
+    </center>
+
+	<center>T (CTC)
+    	<div class="form-group col-md-3">
+      		<input type="number" class="form-control text-center shadow-sm" name="txtn3" id="txtn3">
+    	</div>
+    </center>
+	<center>PRNT (%)
+    	<div class="form-group col-md-3">
+      		<input type="number" class="form-control text-center shadow-sm" name="txtn4" id="txtn4">
+    	</div>
+    </center>
+	
+
+	<button type="button" class="btn btn-success btn-lg " value="Somar" onclick="somar()">Calcular</button><br><br>
+
+	<div id="res">Resultado</div>
+
+	<script >
+		function somar(){
+			var tn1 = window.document.getElementById('txtn1')
+			var tn2 = window.document.querySelector('input#txtn2')
+			var tn3 = window.document.getElementById('txtn3')
+			var tn4 = window.document.getElementById('txtn4')
+			
+			var res = window.document.getElementById('res')
+			var n1 = Number (tn1.value)
+			var n2 = Number(tn2.value)
+			var n3 = Number(tn3.value)
+			var n4 = Number(tn4.value)
+			
+			var s = n1 - n2 
+			var r = s * n3 
+			var e = 10 * n4
+			var a = r / e
+
+			res.innerHTML = 'Resultado:&nbsp;' +a .toFixed(1)+ '&nbsp;t/ha calcário PRNT&nbsp;' +n4+ '%'
+		}
+	</script>
+
+  </div>
+</div>
+
+
+<br>
+
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>
