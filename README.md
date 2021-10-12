@@ -1,7 +1,16 @@
 # T-HA-Calcario
-Aplicação visa calcular quantidade de calcário a ser jogado em uma área, a partir de dados de uma analise de solo <br><br>
+<h3>Aplicação visa calcular quantidade de calcário a ser jogado em uma área, a partir de dados de uma análise de solo:</h3> <br>
 
-<h1>Análise de Solos</h1>
+<h5>SB (Soma de bases) = K  + Ca² + Mg²   (Potássio Cálcio e Magnesio)<br><br>
+
+Acidez Potencial = H + Al³ (Hidrogênio Alumínio)<br>
+
+T (CTC) = SB + H + Al   (Soma de bases + Hidrogênio + Alumínio)<br>
+
+V% (saturação por bases) = SB/T x 100</h5>
+
+<br>
+<h1>Análise de Solo</h1>
 
 ![Amostra de solos](https://user-images.githubusercontent.com/48594322/136967982-c3021226-fbf3-452c-ae25-285e4b216f45.png)<br><br>
 
