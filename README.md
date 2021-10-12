@@ -21,4 +21,7 @@ V% (saturação por bases) = SB/T x 100</h5>
 <h1>Reolução Exercício 1A e 1B</h1>
 
 ![1](https://user-images.githubusercontent.com/48594322/136981501-d40d1759-d18b-4328-850c-a9eba8039b40.png)
+<br>
+Link da aplicação web:
 
+https://wiliansantana.github.io/T-HA-Calcario/CalculoCalcario.html
